@@ -1,478 +1,604 @@
-# CSS Lab
+# CSS Foundations Lab — Currículo Canônico
 
-## Identificação
+## Escopo
 
-**Lab:** CSS Lab
+O **CSS Foundations Lab** desenvolve compreensão dos mecanismos essenciais que controlam apresentação e layout na Web. O foco está em seleção, cascata, especificidade, herança, modelo de caixa, fluxo, posicionamento, Flexbox, Grid, responsividade e acessibilidade visual, com ênfase em prever, explicar e diagnosticar comportamentos.
 
-**Sigla:** CSS
+## Mapa curricular
 
-**Finalidade:** Construir uma base que permita compreender e prever o comportamento do CSS, selecionar conscientemente seus mecanismos de layout, criar interfaces responsivas e acessíveis e adquirir recursos posteriores sem precisar reaprender os modelos fundamentais da linguagem.
-
----
-
-# Estrutura curricular
-
-## CSS-01 — Regras, seleção e resolução de estilos
-
-### Objetivo
-
-Compreender como CSS associa declarações aos elementos e determina quais valores efetivamente participam da renderização.
-
-### Unidades
-
-#### CSS-01.01 — Estrutura da linguagem e aplicação de estilos
-
-**Objetivo:** compreender a composição mínima de uma folha de estilos e sua relação com o documento.
-
-**Conceitos fundamentais:**
-
-1. CSS como linguagem de apresentação de documentos estruturados;
-2. folhas de estilo;
-3. regras de estilo;
-4. seletores;
-5. blocos de declarações;
-6. propriedades e valores;
-7. declarações válidas, inválidas e valores não suportados.
-
-**Chats derivados:**
-
-- `CSS-01.01 — Estudo — Estrutura da linguagem e aplicação de estilos`
-- `CSS-01.01 — Prática — Estrutura da linguagem e aplicação de estilos`
-
-#### CSS-01.02 — Seletores, relações e estados
-
-**Objetivo:** selecionar elementos segundo identidade, estrutura, relação e estado sem misturar seleção com comportamento programático.
-
-**Conceitos fundamentais:**
-
-1. seletores de tipo, classe, ID, atributo e universal;
-2. seletores compostos e listas de seletores;
-3. combinadores e relações estruturais;
-4. pseudo-classes;
-5. estados de interação, incluindo foco;
-6. pseudo-elementos;
-7. relação entre escolha de seletor e especificidade.
-
-**Chats derivados:**
-
-- `CSS-01.02 — Estudo — Seletores, relações e estados`
-- `CSS-01.02 — Prática — Seletores, relações e estados`
-
-#### CSS-01.03 — Cascata, especificidade e herança
-
-**Objetivo:** prever qual declaração vence quando diferentes regras podem determinar o mesmo valor.
-
-**Conceitos fundamentais:**
-
-1. relevância das declarações;
-2. origens da cascata;
-3. importância normal e `!important`;
-4. camadas de cascata;
-5. especificidade;
-6. ordem de aparecimento;
-7. herança;
-8. valores iniciais e valores herdados;
-9. palavras-chave globais de controle da cascata;
-10. progressão entre valor declarado, cascaded, specified, computed e used.
-
-**Chats derivados:**
-
-- `CSS-01.03 — Estudo — Cascata, especificidade e herança`
-- `CSS-01.03 — Prática — Cascata, especificidade e herança`
-
-#### CSS-01.04 — Valores, unidades e custom properties
-
-**Objetivo:** compreender como valores expressam dimensões, relações e cálculos e como podem ser reutilizados pela própria cascata.
-
-**Conceitos fundamentais:**
-
-1. tipos de valores CSS e leitura básica da sintaxe de valores;
-2. números, comprimentos e ângulos;
-3. unidades absolutas e relativas;
-4. `em` e `rem`;
-5. porcentagens e seus valores de referência;
-6. unidades relativas ao viewport;
-7. funções matemáticas fundamentais: `calc()`, `min()`, `max()` e `clamp()`;
-8. custom properties;
-9. `var()` e valores de fallback;
-10. cascata e herança das custom properties.
-
-**Chats derivados:**
-
-- `CSS-01.04 — Estudo — Valores, unidades e custom properties`
-- `CSS-01.04 — Prática — Valores, unidades e custom properties`
-
-### Resultado esperado
-
-O estudante consegue explicar **por que determinado valor foi aplicado a determinado elemento** e trabalhar com a cascata sem depender de tentativa e erro.
-
-### Checkpoint derivado
-
-`CSS-01 — Checkpoint — Regras, seleção e resolução de estilos`
+| ID | Bloco |
+|:---:|---|
+| `CSS-01` | [Seletores, Especificidade e Cascata](../practice/css-01-seletores-especificidade-e-cascata/) |
+| `CSS-02` | [Caixa e Dimensionamento](../practice/css-02-caixa-e-dimensionamento/) |
+| `CSS-03` | [Fluxo Normal e Posicionamento](../practice/css-03-fluxo-normal-e-posicionamento/) |
+| `CSS-04` | [Layout com Flexbox e Grid](../practice/css-04-layout-com-flexbox-e-grid/) |
+| `CSS-05` | [Responsividade e Adaptação](../practice/css-05-responsividade-e-adaptacao/) |
+| `CSS-06` | [Acessibilidade e Qualidade de Layout](../practice/css-06-acessibilidade-e-qualidade-de-layout/) |
 
 ---
 
-## CSS-02 — Apresentação, caixas e fluxo
+# CSS-01 — Seletores, Especificidade e Cascata
 
-### Objetivo
+## Objetivo
 
-Compreender como conteúdo estilizado gera caixas, ocupa espaço e participa do fluxo e do sistema de coordenadas do documento.
+Desenvolver a capacidade de **aplicar estilos de forma previsível** sabendo como selecionar elementos corretamente e resolver conflitos entre regras. Ao final, o aluno deve entender de onde vêm os valores dos estilos e por que determinada regra CSS prevalece sobre outra.
 
-### Unidades
+## Unidades
 
-#### CSS-02.01 — Cor, texto e tipografia fundamentais
+### CSS-01.01 — Seletores CSS
 
-**Objetivo:** controlar as características visuais essenciais que influenciam legibilidade e dimensionamento do conteúdo.
+**Objetivo**
 
-**Conceitos fundamentais:**
+Aprender a **escolher e escrever seletores** que atingem corretamente os elementos-alvo no HTML.
 
-1. cor de primeiro plano e de fundo;
-2. valores de cor e transparência;
-3. famílias tipográficas e fallbacks;
-4. tamanho, peso e estilo da fonte;
-5. altura de linha;
-6. alinhamento e decoração textual;
-7. quebra, espaços e fluxo básico do texto.
+**Fundamentos**
 
-**Chats derivados:**
+- Sintaxe de regra CSS (seletor { propriedade: valor; }) e relacioná-la ao DOM.
+- Seletores de tipo, classe, id, atributo, descendente, filho e irmãos.
+- Pseudoclasses essenciais (`:hover`, `:focus`, `:active`, `:visited`) e pseudoelementos básicos (`::before`, `::after`) para estilização reativa.
 
-- `CSS-02.01 — Estudo — Cor, texto e tipografia fundamentais`
-- `CSS-02.01 — Prática — Cor, texto e tipografia fundamentais`
+**Competências**
 
-#### CSS-02.02 — Modelo de caixa
+- Selecionar elementos usando diferentes combinadores.
+- Associar estilos a interações básicas (hover, foco) por pseudoclasses.
+- Prever quais elementos serão afetados por determinado seletor.
+- Evitar seletores excessivamente genéricos ou específicos demais.
 
-**Objetivo:** compreender como as dimensões visíveis e o espaço ocupado por um elemento são formados.
+**Dependências**
 
-**Conceitos fundamentais:**
+nenhuma (pré-requisito básico de HTML).
 
-1. content box;
-2. padding;
-3. border;
-4. margin;
-5. `content-box` e `border-box`;
-6. `box-sizing`;
-7. cálculo da dimensão total da caixa;
-8. colapso de margens no fluxo em bloco;
-9. backgrounds e borders como decoração da caixa.
+**Web Integration**
 
-**Chats derivados:**
+Estilizar um menu de navegação que muda aparência no `:hover` ou no estado de foco via teclado. Por exemplo, JS pode adicionar/remover classes a elementos de menu; o aluno deve aplicar seletores adequados para refletir essas mudanças.
 
-- `CSS-02.02 — Estudo — Modelo de caixa`
-- `CSS-02.02 — Prática — Modelo de caixa`
+### CSS-01.02 — Cascata, Especificidade e Herança
 
-#### CSS-02.03 — Display, fluxo e dimensionamento
+**Objetivo**
 
-**Objetivo:** compreender como caixas participam do fluxo e como seus tamanhos são determinados e limitados.
+Compreender como o CSS **resolve conflitos** entre regras, determinar a especificidade de seletores e o papel da herança e da ordem das declarações.
 
-**Conceitos fundamentais:**
+**Fundamentos**
 
-1. geração de caixas e `display`;
-2. tipos externos e internos de display;
-3. comportamento block e inline;
-4. fluxo normal;
-5. caixas in-flow e relações com o conteúdo;
-6. eixos block e inline;
-7. dimensões físicas e propriedades lógicas;
-8. `auto` e espaço disponível;
-9. porcentagens e containing block;
-10. dimensões mínimas e máximas;
-11. dimensionamento intrínseco: `min-content`, `max-content` e `fit-content`;
-12. conteúdo substituído e dimensões intrínsecas;
-13. overflow e scroll containers.
+- **Cascata:** origem e ordem das regras (user agent, user, author) e o papel de `!important`.
+- **Especificidade:** algoritmo que define peso de seletores (id > classe > elemento).
+- **Herança:** propriedades que são herdadas (ex.: `color`, `font-family`) versus propriedades que não o são (ex.: `width`). Valores iniciais padrões.
+- Como depurar conflitos comuns: declarar a mesma propriedade em regras diferentes, entender qual prevalece.
 
-**Chats derivados:**
+**Competências**
 
-- `CSS-02.03 — Estudo — Display, fluxo e dimensionamento`
-- `CSS-02.03 — Prática — Display, fluxo e dimensionamento`
+- Prever qual regra será aplicada quando múltiplas regras afetem o mesmo elemento/propriedade.
+- Diagnosticar por que um estilo esperado não aparece (ex.: seletor errado, menor especificidade, ordem incorreta).
+- Justificar decisões de estilo explicando origem, especificidade e herança das regras.
+- Evitar hackeações simples, preferindo reorganizar CSS ou aumentar especificidade conscientemente.
 
-#### CSS-02.04 — Posicionamento e empilhamento
+**Dependências**
 
-**Objetivo:** compreender quando uma caixa permanece no fluxo, quando é deslocada e em relação a qual referência suas coordenadas são calculadas.
+CSS-01.01 (conhecimento de seletores).
 
-**Conceitos fundamentais:**
+**Web Integration**
 
-1. containing block;
-2. `position: static`;
-3. posicionamento relativo;
-4. posicionamento absoluto;
-5. posicionamento fixo;
-6. posicionamento sticky;
-7. inset e offsets;
-8. participação e remoção do fluxo;
-9. eixo de profundidade;
-10. `z-index`;
-11. stacking contexts e ordem de pintura.
+Resolver um problema de cascata em que diferentes arquivos CSS (ou estilos inline) definem a mesma propriedade. Ex.: um script JS alterna classes e o aluno explica por que o estilo resultante veio de uma regra específica (especificidade e ordem).
 
-**Chats derivados:**
+## Checklist
 
-- `CSS-02.04 — Estudo — Posicionamento e empilhamento`
-- `CSS-02.04 — Prática — Posicionamento e empilhamento`
+- [ ] Escrever seletores que atinjam exatamente os elementos desejados.
+- [ ] Explicar qual regra CSS prevalece em caso de conflito (cascade + especificidade).
+- [ ] Distinguir valores herdados dos valores iniciais e como isso afeta a estilização.
+- [ ] Diagnosticar por que um estilo esperado não foi aplicado a um elemento.
 
-### Resultado esperado
+## Validação do bloco
 
-O estudante consegue prever **quanto espaço uma caixa ocupa, onde ela será posicionada e como o conteúdo ao redor reagirá**, inclusive diante de restrições e overflow.
-
-### Checkpoint derivado
-
-`CSS-02 — Checkpoint — Apresentação, caixas e fluxo`
+Ao final deste bloco, o aluno deve ser capaz de analisar um trecho de código CSS/HTML e explicar **por que** certa declaração (por exemplo, `color` ou `display`) está (ou não) sendo aplicada a um elemento, identificando a regra vencedora (considerando especificidade, origem e ordem) e se o valor veio por herança ou não.
 
 ---
 
-## CSS-03 — Sistemas de layout e adaptação
+# CSS-02 — Caixa e Dimensionamento
 
-### Objetivo
+## Objetivo
 
-Aprender a escolher e combinar os sistemas modernos de layout em vez de utilizar posicionamento ou propriedades isoladas como soluções genéricas.
+Desenvolver compreensão do **modelo de caixa** do CSS e de como dimensões e unidades são calculadas. O aluno será capaz de controlar o tamanho real de elementos, espaçamentos e lidar com situações de overflow.
 
-### Unidades
+## Unidades
 
-#### CSS-03.01 — Eixos, alinhamento e escolha do mecanismo
+### CSS-02.01 — Modelo de Caixa (Box Model)
 
-**Objetivo:** reconhecer o problema de layout antes de selecionar a ferramenta que irá resolvê-lo.
+**Objetivo**
 
-**Conceitos fundamentais:**
+Entender que cada elemento é uma caixa composta por conteúdo, padding, borda e margem, e como ajustar esses valores.
 
-1. fluxo normal como comportamento inicial;
-2. distribuição versus posicionamento;
-3. eixos block/inline e main/cross;
-4. alinhamento de itens e conteúdo;
-5. distribuição de espaço disponível;
-6. `gap`;
-7. alinhamento coletivo e individual;
-8. diferença conceitual entre fluxo, posicionamento, Flexbox e Grid.
+**Fundamentos**
 
-**Chats derivados:**
+- Estrutura da caixa: conteúdo, `padding`, `border`, `margin`.
+- Modelo de caixa padrão (`content-box`) vs `box-sizing: border-box`.
+- Cálculo de largura/altura total de um elemento (por exemplo, `width` + padding + borda em *content-box*).
+- Colapso de margens verticais (quando margens de elementos em bloco se fundem).
+- Conceito de *containing block* para elementos relativos (relevante em posicionamento futuro).
 
-- `CSS-03.01 — Estudo — Eixos, alinhamento e escolha do mecanismo`
-- `CSS-03.01 — Prática — Eixos, alinhamento e escolha do mecanismo`
+**Competências**
 
-#### CSS-03.02 — Flexbox
+- Calcular manualmente a largura/altura ocupada por um elemento, considerando padding e bordas.
+- Usar `box-sizing` para alterar esse comportamento conforme necessidade.
+- Ajustar margens e espaçamentos para manter alinhamentos previsíveis.
+- Prever efeitos do colapso de margens em elementos sequenciais.
 
-**Objetivo:** construir layouts em que a distribuição e o alinhamento ocorram principalmente ao longo de um eixo.
+**Dependências**
 
-**Conceitos fundamentais:**
+CSS-01 (para aplicar estilos aos elementos certos).
 
-1. flex container e flex items;
-2. main axis e cross axis;
-3. direção;
-4. flex lines e wrapping;
-5. flex basis;
-6. crescimento e encolhimento;
-7. distribuição de espaço;
-8. alinhamento nos dois eixos;
-9. gaps;
-10. implicações da reordenação visual.
+**Web Integration**
 
-**Chats derivados:**
+Criar um “cartão” visual (card) onde se ajusta padding e margem para alinhar texto e imagem interna. Por exemplo, definir `box-sizing:border-box` para que o `width` defina o tamanho total do card, evitando overflow.
 
-- `CSS-03.02 — Estudo — Flexbox`
-- `CSS-03.02 — Prática — Flexbox`
+### CSS-02.02 — Valores, Unidades e Tipografia
 
-#### CSS-03.03 — Grid
+**Objetivo**
 
-**Objetivo:** construir layouts nos quais linhas e colunas precisam ser controladas conjuntamente.
+Aprender sobre os diferentes tipos de valores e unidades no CSS e como escolher unidades relativas ou absolutas para tamanhos e espaçamentos.
 
-**Conceitos fundamentais:**
+**Fundamentos**
 
-1. grid container e grid items;
-2. linhas, tracks, células e áreas;
-3. linhas e colunas;
-4. grid explícito e implícito;
-5. tamanhos fixos, flexíveis e unidade `fr`;
-6. `minmax()` e `repeat()` como instrumentos do modelo de tracks;
-7. posicionamento por linhas e áreas;
-8. auto-placement;
-9. alinhamento;
-10. gaps;
-11. sobreposição de itens;
-12. diferença de responsabilidade entre Grid e Flexbox.
+- Tipos de valores: numéricos, palavras-chave (ex.: `initial`, `inherit`) e funcionais (ex.: `calc()`).
+- **Unidades absolutas:** `px`, `in`, `cm` (raramente usadas em web).
+- **Unidades relativas:** `%`, `em`, `rem`, `vw`, `vh` etc.; entender referências de cálculo para cada uma.
+- Importância de `em`/`rem` para escalabilidade de texto e layout (unidades relativas são mais acessíveis pois respeitam preferências do usuário).
+- Uso de `%` para dimensões relativas ao elemento pai ou ao *containing block*.
+- Unidades de cor (hexa, rgb(a), hsl(a)) e transparências básicas.
 
-**Chats derivados:**
+**Competências**
 
-- `CSS-03.03 — Estudo — Grid`
-- `CSS-03.03 — Prática — Grid`
+- Definir tamanhos de fonte, largura e espaço com unidades adequadas para tornar o layout flexível.
+- Usar `rem` para fontes baseadas no tamanho raiz e `em` para espaçamentos dependentes de fonte atual.
+- Converter unidades quando necessário (por exemplo, de px para rem).
+- Reconhecer situações onde `percentage` facilita layouts fluidos.
 
-#### CSS-03.04 — Layout responsivo e Media Queries
+**Dependências**
 
-**Objetivo:** produzir layouts que se adaptem ao espaço disponível e às características relevantes do ambiente.
+CSS-02.01 (para aplicar padding, largura etc.).
 
-**Conceitos fundamentais:**
+**Web Integration**
 
-1. layout fluido como comportamento preferencial;
-2. dimensionamento relativo e restrições;
-3. Flexbox e Grid responsivos;
-4. media queries;
-5. media features;
-6. consultas por largura, altura e orientação;
-7. range queries;
-8. breakpoints determinados pela necessidade do layout;
-9. estratégias mobile-first e suas limitações;
-10. combinação entre adaptação fluida e mudanças condicionais.
+Implementar uma tipografia escalável: por exemplo, configurar `html { font-size: 100%; }` e usar `rem` para títulos, permitindo o ajuste proporcional se o usuário alterar o zoom/zoom da página.
 
-**Chats derivados:**
+### CSS-02.03 — Dimensões, Largura/Altura e Overflow
 
-- `CSS-03.04 — Estudo — Layout responsivo e Media Queries`
-- `CSS-03.04 — Prática — Layout responsivo e Media Queries`
+**Objetivo**
 
-### Resultado esperado
+Controlar explicitamente as dimensões (width, height, min/max) de elementos e lidar com conteúdo que extrapola essas dimensões (overflow).
 
-O estudante consegue escolher entre fluxo, posicionamento, Flexbox e Grid e compor interfaces que **se reorganizam pelo comportamento do conteúdo e do espaço disponível**, em vez de depender de dimensões rígidas.
+**Fundamentos**
 
-### Checkpoint derivado
+- Propriedades `width`, `height`, `min-width`, `max-width`, `min-height`, `max-height` e como elas afetam o tamanho de boxes.
+- Diferença entre valores fixos (px) e fluidos (% ou `auto`) nas dimensões.
+- Comportamento do overflow: `overflow: visible/hidden/scroll/auto`. O que acontece quando o conteúdo não cabe (scrollbars, corte).
+- Uso de `max-width: 100%` em imagens para evitar ultrapassar o contêiner (funda­mental para responsividade).
 
-`CSS-03 — Checkpoint — Sistemas de layout e adaptação`
+**Competências**
 
----
+- Definir limites de tamanho (ex.: páginas centradas com `max-width` para legibilidade).
+- Prever quando o conteúdo causará overflow e escolher estratégia (cortar, rolagem ou ajuste de layout).
+- Aplicar porcentagens de forma que elementos se ajustem ao pai (ex.: colunas fluidas).
+- Utilizar `box-sizing` (de 02.01) em conjunto para garantir que `width` inclua padding/borda conforme esperado.
 
-## CSS-04 — Robustez, acessibilidade e organização
+**Dependências**
 
-### Objetivo
+CSS-02.01, CSS-02.02.
 
-Garantir que o CSS produzido continue compreensível, previsível e utilizável diante de diferentes usuários, tamanhos de viewport e necessidades de interação.
+**Web Integration**
 
-### Unidades
+Resolver um caso em que um painel de conteúdo está excedendo seu contêiner. Por exemplo, exibir barras de rolagem apenas quando necessário usando `overflow`, ou fazer imagens responsivas com `max-width: 100%`.
 
-#### CSS-04.01 — Acessibilidade visual e de interação no CSS
+## Checklist
 
-**Objetivo:** estilizar interfaces sem remover ou prejudicar informações e mecanismos de interação necessários ao usuário.
+- [ ] Calcular o tamanho total de um elemento (incluindo padding e borda).
+- [ ] Usar `box-sizing` para ajustar como o `width/height` são aplicados.
+- [ ] Definir tamanhos usando unidades relativas (`%`, `em`, `rem`) quando quiser layout flexível.
+- [ ] Prever e controlar overflow de conteúdo em contêineres.
 
-**Conceitos fundamentais:**
+## Validação do bloco
 
-1. contraste de texto e componentes;
-2. informação não transmitida exclusivamente por cor;
-3. foco visível;
-4. foco não obscurecido por elementos sobrepostos;
-5. legibilidade e espaçamento textual;
-6. redimensionamento de texto;
-7. zoom e reflow;
-8. prevenção de overflow horizontal desnecessário;
-9. ordem visual versus ordem estrutural;
-10. preservação da ordem de navegação;
-11. movimento e `prefers-reduced-motion`;
-12. media queries relacionadas a preferências do usuário.
-
-**Chats derivados:**
-
-- `CSS-04.01 — Estudo — Acessibilidade visual e de interação no CSS`
-- `CSS-04.01 — Prática — Acessibilidade visual e de interação no CSS`
-
-#### CSS-04.02 — Organização nativa e controle da cascata
-
-**Objetivo:** manter folhas de estilo extensíveis sem introduzir complexidade metodológica externa prematuramente.
-
-**Conceitos fundamentais:**
-
-1. classes reutilizáveis e seletores com responsabilidade clara;
-2. especificidade previsível;
-3. preferência por cascata controlada em vez de escalada de especificidade;
-4. uso deliberado da ordem das regras;
-5. uso consciente de cascade layers;
-6. uso excepcional, e não rotineiro, de `!important`;
-7. custom properties para valores compartilhados e configuração local;
-8. escopo natural das custom properties pela árvore;
-9. agrupamento coerente de regras;
-10. nomenclatura consistente sem dependência de metodologia específica.
-
-**Chats derivados:**
-
-- `CSS-04.02 — Estudo — Organização nativa e controle da cascata`
-- `CSS-04.02 — Prática — Organização nativa e controle da cascata`
-
-### Resultado esperado
-
-O estudante consegue produzir CSS cuja apresentação continua utilizável em diferentes condições e cuja cascata permanece suficientemente controlada para crescimento posterior.
-
-### Checkpoint derivado
-
-`CSS-04 — Checkpoint — Robustez, acessibilidade e organização`
+Ao final deste bloco, o aluno deve ser capaz de estruturar um layout simples (como um painel de texto ou cartão de produto) definindo larguras, alturas, margens e preenchimentos de maneira apropriada, justificando o uso de cada unidade e mostrando como resolver um eventual overflow. Por exemplo, explicar por que um elemento extrapola sua caixa e como ajustar `max-width` ou `overflow` para corrigir.
 
 ---
 
-# Mapa operacional dos chats
+# CSS-03 — Fluxo Normal e Posicionamento
 
-```text
-CSS-01 — Regras, seleção e resolução de estilos
+## Objetivo
 
-CSS-01.01 — Estudo — Estrutura da linguagem e aplicação de estilos
-CSS-01.01 — Prática — Estrutura da linguagem e aplicação de estilos
+Familiarizar-se com o **fluxo padrão** de layout do CSS e os principais mecanismos de posicionamento. O aluno aprenderá a prever como os elementos serão dispostos sem posicionamento especial, e como usar `position` para controlar localizações e sobreposições.
 
-CSS-01.02 — Estudo — Seletores, relações e estados
-CSS-01.02 — Prática — Seletores, relações e estados
+## Unidades
 
-CSS-01.03 — Estudo — Cascata, especificidade e herança
-CSS-01.03 — Prática — Cascata, especificidade e herança
+### CSS-03.01 — Fluxo normal (block vs inline) e display
 
-CSS-01.04 — Estudo — Valores, unidades e custom properties
-CSS-01.04 — Prática — Valores, unidades e custom properties
+**Objetivo**
 
-CSS-01 — Checkpoint — Regras, seleção e resolução de estilos
+Entender como elementos de bloco e inline são posicionados em fluxo normal e como as propriedades `display` controlam isso.
 
-CSS-02 — Apresentação, caixas e fluxo
+**Fundamentos**
 
-CSS-02.01 — Estudo — Cor, texto e tipografia fundamentais
-CSS-02.01 — Prática — Cor, texto e tipografia fundamentais
+- **Fluxo normal:** elementos em bloco (cada novo em linha) vs inline (no mesmo fluxo de linha).
+- Propriedade `display`: valores básicos `block`, `inline`, `inline-block`, `none`, e noções de `flex`/`grid` como display (introdução).
+- Colapso de margem entre elementos de bloco adjacentes.
+- **Espaçamento branco (white-space)** e quebra automática de linha em texto inline.
+- Conceito de *containing block* no contexto de elementos posicionados (ligado a fluxo).
 
-CSS-02.02 — Estudo — Modelo de caixa
-CSS-02.02 — Prática — Modelo de caixa
+**Competências**
 
-CSS-02.03 — Estudo — Display, fluxo e dimensionamento
-CSS-02.03 — Prática — Display, fluxo e dimensionamento
+- Prever a posição inicial de elementos (por ex., duas `div` em sequência ficam empilhadas).
+- Usar `display` para alterar o comportamento padrão (transformar bloco em inline-block, esconder elementos).
+- Solucionar problemas de layout relacionados ao fluxo, como espaços indesejados entre elementos inline-block.
+- Diferenciar `visibility: hidden` de `display: none` (impacto no fluxo).
 
-CSS-02.04 — Estudo — Posicionamento e empilhamento
-CSS-02.04 — Prática — Posicionamento e empilhamento
+**Dependências**
 
-CSS-02 — Checkpoint — Apresentação, caixas e fluxo
+CSS-02.
 
-CSS-03 — Sistemas de layout e adaptação
+**Web Integration**
 
-CSS-03.01 — Estudo — Eixos, alinhamento e escolha do mecanismo
-CSS-03.01 — Prática — Eixos, alinhamento e escolha do mecanismo
+Ajustar o layout de um cabeçalho com itens de menu: tornar elementos `li` em linha (`display:inline-block`) ou em bloco horizontal, garantindo que se comportem como desejado no fluxo.
 
-CSS-03.02 — Estudo — Flexbox
-CSS-03.02 — Prática — Flexbox
+### CSS-03.02 — Posicionamento Estático e Relativo
 
-CSS-03.03 — Estudo — Grid
-CSS-03.03 — Prática — Grid
+**Objetivo**
 
-CSS-03.04 — Estudo — Layout responsivo e Media Queries
-CSS-03.04 — Prática — Layout responsivo e Media Queries
+Aprender os efeitos de `position: static` (padrão) e `position: relative` em elementos.
 
-CSS-03 — Checkpoint — Sistemas de layout e adaptação
+**Fundamentos**
 
-CSS-04 — Robustez, acessibilidade e organização
+- Posição estática: o elemento permanece no fluxo normal (padrão).
+- `position: relative`: desloca um elemento em relação à sua posição original sem removê-lo do fluxo (ex.: `left: 10px` desloca, mas espaço original é mantido).
+- `top/right/bottom/left` em elementos relativos (movimentação a partir da posição inicial).
+- Conceito básico de *containing block* para elementos relativamente posicionados (normalmente, o próprio elemento).
+- Origem do sistema de coordenadas local para offsets.
 
-CSS-04.01 — Estudo — Acessibilidade visual e de interação no CSS
-CSS-04.01 — Prática — Acessibilidade visual e de interação no CSS
+**Competências**
 
-CSS-04.02 — Estudo — Organização nativa e controle da cascata
-CSS-04.02 — Prática — Organização nativa e controle da cascata
+- Ajustar local rapidamente um elemento em relação à sua posição natural (ex.: criar um alinhamento fino).
+- Prever como um `position: relative` afetará o layout (outro conteúdo não reposiciona totalmente).
+- Usar deslocamentos sem quebrar o fluxo geral da página.
 
-CSS-04 — Checkpoint — Robustez, acessibilidade e organização
+**Dependências**
 
-CSS — Checkpoint Final
-```
+CSS-03.01.
 
-# Competências ao concluir o Lab
+**Web Integration**
 
-1. **Explicar e prever** por que determinada declaração CSS é aplicada.
-2. **Raciocinar sobre valores, unidades, herança e dimensionamento** sem depender apenas de tentativa e erro.
-3. **Prever o comportamento de caixas**, fluxo, overflow, containing blocks e empilhamento.
-4. **Escolher conscientemente** entre fluxo normal, posicionamento, Flexbox e Grid.
-5. **Construir layouts fluidos e responsivos**, utilizando media queries somente quando necessárias.
-6. **Preservar requisitos fundamentais de acessibilidade** relacionados à apresentação e interação.
-7. **Estruturar CSS com cascata e especificidade previsíveis**, mantendo possibilidade de crescimento.
-8. **Ler documentação e especificações posteriormente** e incorporar novas propriedades sem reconstruir os modelos mentais fundamentais.
+Posicionar um elemento de destaque levemente deslocado (por exemplo, um selo “New” sobre um banner) usando `position: relative` no elemento pai e `position: absolute` no selo (a ser visto em posicionamento absoluto). No contexto deste exercício, o foco será entender o deslocamento relativo antes de usar absoluto.
 
-# Aprofundamentos posteriores
+### CSS-03.03 — Posicionamento Absoluto, Fixo, Sticky e Empilhamento
 
-- **Seleção e cascata avançadas:** `:is()`, `:where()`, `:has()`, `@scope`, nesting nativo e técnicas avançadas com cascade layers.
-- **Custom properties avançadas:** `@property`, propriedades tipadas e padrões mais sofisticados de composição.
-- **Layout especializado:** `subgrid`, container queries, multicolumn layout, layouts de tabelas e técnicas avançadas de dimensionamento.
-- **Posicionamento especializado:** anchor positioning, posicionamento avançado e casos complexos de stacking contexts.
-- **Movimento e efeitos:** transforms, transitions, animations, filters, clipping, masking e blending.
-- **Cor e apresentação avançadas:** espaços de cor modernos, interpolação, gradientes, múltiplos backgrounds e efeitos gráficos.
-- **Tipografia avançada:** `@font-face`, variable fonts, OpenType, color fonts e controles tipográficos especializados.
-- **Outros meios:** impressão, paged media e estilos específicos para diferentes meios.
-- **Legado e interoperabilidade:** `float` em seu papel atual de envolvimento de conteúdo, `clear`, clearfix, manutenção de layouts antigos baseados em floats/tabelas e hacks históricos. Como sistema geral de layout de página, floats e tabelas foram superados por modelos concebidos especificamente para esse problema, sobretudo Flexbox e Grid.
-- **Arquitetura e tooling:** BEM, OOCSS, SMACSS, Sass, Less, PostCSS, CSS Modules, CSS-in-JS, frameworks e pipelines de build.
-- **Acessibilidade ampliada:** estudo sistemático da WCAG e dos aspectos semânticos e comportamentais pertencentes a HTML e JavaScript.
+**Objetivo**
+
+Aprender como remover elementos do fluxo e posicioná-los de forma independente, e como controlar a ordem de empilhamento (z-index).
+
+**Fundamentos**
+
+- `position: absolute`: elemento sai do fluxo normal; posicionado em relação ao *containing block* (o ancestral posicionado mais próximo).
+- `position: fixed`: elemento fixo em relação à viewport (sempre visível no mesmo lugar da tela).
+- `position: sticky`: comportamento híbrido (posiciona como estático até certo ponto de scroll, depois se fixa).
+- Como definir `top/right/bottom/left` nesses casos para posicionar o elemento precisamente.
+- **Stacking context:** `z-index` define a ordem de sobreposição em contexto de empilhamento (possuem contexto elementos posicionados ou raiz); elementos com maior z-index aparecem na frente.
+
+**Competências**
+
+- Colocar elementos em camadas sobrepostos de forma controlada (ex.: menus ou modais) usando `z-index`.
+- Usar `position: absolute` para criar sobreposições, painéis popup ou ícones posicionados (ex.: texto sobre imagem).
+- Entender como `fixed` garante barras fixas no topo/rodapé independente do scroll.
+- Identificar *containing block* de um elemento absoluto (pai posicionado).
+
+**Dependências**
+
+CSS-03.01, CSS-03.02.
+
+**Web Integration**
+
+Construir um menu fixo no topo da página (`fixed`) ou uma caixa de diálogo posicionada (`absolute`) sobre o conteúdo; por exemplo, um modal ou tooltip que requer posicionamento fora do fluxo normal.
+
+### CSS-03.04 — Floats e Layout Legado (conteúdo opcional)
+
+**Objetivo**
+
+Compreender o uso original da propriedade `float` e seu impacto no fluxo (técnicas legadas de layout).
+
+**Fundamentos**
+
+- `float: left/right`: tira o elemento do fluxo de texto normal e faz o texto fluir ao redor dele (como no layout de imagem com texto contornando).
+- Problemas de *clear* (limpeza): quando elementos subsequentes podem fluir para o lado do *float*, uso de `clear: both` para quebrar o fluxo.
+- Uso histórico de floats para criar layouts de colunas antes do flex/grid (técnica legada).
+
+**Competências**
+
+- Aplicar float em elementos para fazer texto contornar (como imagens em parágrafos).
+- Resolver colapsos de altura em contêineres que têm apenas filhos flutuantes (ex.: clearfix).
+- Reconhecer quando não usar float em layouts modernos (preferir flex/grid para colunas).
+
+**Dependências**
+
+CSS-03.01.
+
+**Web Integration**
+
+Flutuar uma imagem à esquerda de um parágrafo, garantindo que o texto se ajuste corretamente (float). Em um contexto de integração, adicionar clareza de funcionamento comparando com Flexbox para colunas como alternativa.
+
+## Checklist
+
+- [ ] Prever como dois elementos de bloco ou inline aparecem no fluxo normal.
+- [ ] Usar `display` para modificar o comportamento de elementos (por exemplo, `inline-block` vs `block`).
+- [ ] Posicionar um elemento relativo para ajustes finos sem tirar do fluxo.
+- [ ] Remover um elemento do fluxo usando `position: absolute/fixed` e controlá-lo com `z-index`.
+- [ ] Compreender e evitar armadilhas de floats (e limpá-los com `clear` quando necessário).
+
+## Validação do bloco
+
+Ao final deste bloco, o aluno deve ser capaz de reconstruir um layout estático complexo, explicando como cada elemento se posiciona: distinguir qual está no fluxo normal, qual foi movido por `position`, e como o `z-index` determina camadas de sobreposição. Por exemplo, justificar o uso de `absolute` sobre uma imagem de fundo para posicionar texto ou a conversão de elementos em `inline-block` para alinhamento horizontal.
+
+---
+
+# CSS-04 — Layout com Flexbox e Grid
+
+## Objetivo
+
+Desenvolver a capacidade de escolher e usar corretamente **Flexbox e CSS Grid** para resolver problemas de layout complexos. O aluno aprenderá a analisar um problema de layout (dimensionalidade, relação entre itens) e aplicar o sistema de layout adequado, controlando eixo, alinhamento e espaço disponível.
+
+## Unidades
+
+### CSS-04.01 — Flexbox (Layout Unidimensional)
+
+**Objetivo**
+
+Entender o **modelo flexbox**, dispondo itens em um único eixo (linha ou coluna) de maneira flexível.
+
+**Fundamentos**
+
+- Contêiner flexível (`display: flex` ou `inline-flex`) e flex items (filhos diretos).
+- Eixos do flexbox: eixo principal (main axis) e cruzado (cross axis).
+- Propriedades do contêiner: `flex-direction` (row/column), `flex-wrap` (embrulhar ou não), `justify-content` (distribuição no eixo principal), `align-items` (alinhamento no eixo cruzado).
+- Propriedades dos itens: `flex-grow`, `flex-shrink`, `flex-basis` (dimensões flexíveis), alinhamento individual (`align-self`).
+- Ordenação de itens (`order`) e impactos.
+
+**Competências**
+
+- Criar colunas ou filas iguais facilmente (por exemplo, 3 cards lado a lado que se expandem igualmente).
+- Centralizar itens no eixo principal ou cruzado sem ajustes de margem.
+- Resolver excesso de conteúdo usando `flex-wrap`.
+- Comparar cenários: **quando usar flexbox** em vez de grid ou fluxo normal (situações 1D, filas flexíveis).
+
+**Dependências**
+
+CSS-03.
+
+**Web Integration**
+
+Implementar um layout de “cards” onde cada linha deve conter um número variável de itens que se ajustam ao espaço. Por exemplo, um cabeçalho com itens de navegação distribuidos uniformemente no eixo principal, ou uma galeria responsiva de cartões usando `flex`.
+
+### CSS-04.02 — CSS Grid (Layout Bidimensional)
+
+**Objetivo**
+
+Entender o **modelo Grid**, criando layouts em linhas e colunas simultaneamente.
+
+**Fundamentos**
+
+- Contêiner de grade (`display: grid` ou `inline-grid`) e grid items.
+- Definição de linhas e colunas com `grid-template-rows/columns` ou `grid-template-areas`.
+- Grelha implícita vs definida: `grid-auto-flow`, `auto-fill/repeat()` com unidades `fr`.
+- Espaçamento: `gap`, `row-gap`, `column-gap`.
+- Alinhamento dentro de grid: `justify-items`, `align-items`, `justify-content`, `align-content`.
+
+**Competências**
+
+- Construir layouts complexos de duas dimensões (por exemplo, painéis com cabeçalho lateral e conteúdos alinhados em grade).
+- Posicionar itens em células específicas ou áreas nomeadas.
+- Combinar unidades fixas e flexíveis (`fr`) para controlar proporção de colunas/linhas.
+- Saber quando **Grid** é mais adequado que Flexbox (problemas 2D, definição explícita de áreas).
+
+**Dependências**
+
+CSS-04.01 (compreensão prévia de flex ajuda, mas não estritamente necessária).
+
+**Web Integration**
+
+Criar a estrutura de página com cabeçalho, menu lateral e conteúdo principal usando Grid. Por exemplo, definir uma grade 2x2 onde o cabeçalho ocupa toda a largura e o menu ocupa a coluna esquerda em múltiplas linhas.
+
+## Checklist
+
+- [ ] Construir layouts de uma linha ou coluna com Flexbox (centralizando e distribuindo espaço).
+- [ ] Construir layouts mais complexos em grelha (2D) com CSS Grid.
+- [ ] Explicar por que escolhi Flexbox ou Grid para um certo problema de layout.
+- [ ] Usar propriedades de alinhamento (`justify`/`align`) em flex ou grid para posicionar itens.
+
+## Validação do bloco
+
+Ao final deste bloco, o aluno deve conseguir montar um layout de página completo utilizando Flexbox e Grid de forma combinada. Por exemplo, justificar o uso de Grid para a estrutura geral e Flexbox para componentes internos (ou vice-versa), explicando como cada sistema distribui espaço e alinha itens no caso específico. Deverá diagnosticar resultados inesperados, como item que excede a área da grelha ou não se alinha, ajustando as propriedades adequadas.
+
+---
+
+# CSS-05 — Responsividade e Adaptação
+
+## Objetivo
+
+Preparar o aluno para criar interfaces que **se adaptam a diferentes dispositivos**, usando layouts fluidos e consultas de mídia. O foco é entender como o design pode ser flexível em vez de fixo.
+
+## Unidades
+
+### CSS-05.01 — Layout Fluido e Unidades Relativas
+
+**Objetivo**
+
+Dominar técnicas para fazer componentes dimensionais fluírem com o tamanho da tela ou contêiner.
+
+**Fundamentos**
+
+- Layout líquido: definir larguras com `%`, `vw`, `vh` para preencher contêineres fluentes.
+- Uso de `max-width` para limitar crescimento (ex.: evitar que texto fique muito largo).
+- Imagens e mídias fluídas: `img { max-width: 100%; height: auto; }` para redimensionar imagens dentro do contêiner.
+- Unidades de viewport (`vw`, `vh`) para font-size ou larguras relativas ao tamanho da janela.
+- Conceito de tipografia responsiva: `clamp()`, tamanhos base em `rem` e espaçamento proporcional.
+
+**Competências**
+
+- Criar colunas que se redimensionam (porcentagens em `width`).
+- Garantir que mídias (imagens, vídeos) nunca ultrapassem seus contêineres.
+- Evitar layout fixo em pixels, preferindo unidades flexíveis.
+- Antecipar como elementos redimensionam quando a janela muda de tamanho.
+
+**Dependências**
+
+CSS-02 (unidades).
+
+**Web Integration**
+
+Construir um grid responsivo onde as colunas crescem/encolhem conforme o navegador; ajustar imagens e textos para que redimensionem sem distorção, mantendo proporção e legibilidade.
+
+### CSS-05.02 — Media Queries e Breakpoints
+
+**Objetivo**
+
+Aprender a usar *Media Queries* para alterar estilos conforme condições (largura, orientação, resolução).
+
+**Fundamentos**
+
+- Sintaxe das media queries (`@media (min-width: X)` etc.) e tipos de mídia (screen, print).
+- Estratégia mobile-first: escrever CSS base para mobile e usar `min-width` para grandes telas.
+- Definir breakpoints: identificar larguras em que o layout deve mudar.
+- Adaptação de layout: reorganizar colunas em linhas, esconder/mostrar elementos, alterar tamanhos em diferentes faixas de tela.
+- Conceito de *design adaptativo* vs *responsivo*.
+
+**Competências**
+
+- Escrever regras CSS condicionais para diferentes tamanhos de viewport.
+- Escolher breakpoints baseados no design (ex.: quando o conteúdo começa a ficar apertado).
+- Testar no navegador usando ferramentas de desenvolvedor (alternância de dimensões).
+- Justificar a escolha de um ponto de quebra específico com base na fluidez do conteúdo.
+
+**Dependências**
+
+CSS-05.01.
+
+**Web Integration**
+
+Implementar um design de site onde em telas estreitas (mobile) os itens ficam empilhados verticalmente, e em telas largas formam colunas horizontais. Exemplo: converter um menu de hambúrguer em barras horizontais via media query.
+
+## Checklist
+
+- [ ] Fazer um layout escalar com percentuais e unidades flexíveis, sem usar larguras fixas em pixels.
+- [ ] Configurar *media queries* para reorganizar o layout em diferentes larguras.
+- [ ] Garantir que imagens e textos sejam redimensionados adequadamente (ex.: `max-width:100%`).
+- [ ] Implementar uma abordagem *mobile-first*, aplicando estilos mobile e expandindo para desktop via media queries.
+
+## Validação do bloco
+
+Ao final deste bloco, o aluno deve demonstrar uma interface totalmente *responsiva*: por exemplo, uma página que muda de 3 colunas para 1 coluna em telas pequenas. Ele deve explicar como usou unidades fluídas e media queries para cada adaptação, justificando pontos de quebra baseados no conteúdo visível. Deve diagnosticar o que causa overflow ou quebra de layout em diferentes larguras e corrigi-los.
+
+---
+
+# CSS-06 — Acessibilidade e Qualidade de Layout
+
+## Objetivo
+
+Incorporar **considerações de acessibilidade** nas decisões de CSS, garantindo interfaces claras e utilizáveis. O aluno entenderá como escolhas de estilo afetam legibilidade, contraste e navegabilidade, promovendo um design inclusivo.
+
+## Unidades
+
+### CSS-06.01 — Tipografia e Legibilidade
+
+**Objetivo**
+
+Garantir textos legíveis e interface limpa, usando tamanhos e espaçamentos adequados.
+
+**Fundamentos**
+
+- Tamanho de fonte mínimo recomendado (ex.: ≥ 16px padrão) e uso de `line-height` para facilitar leitura.
+- Unidades relativas para texto (`em`, `rem`) que respeitam configurações do usuário.
+- Contraste de cores: importância de combinar fundo/primeiro plano com boa legibilidade (evitar texto claro em fundo claro, alcançar razão de contraste razoável).
+- Espaçamento: distância adequada entre linhas e parágrafos para facilitar leitura contínua.
+
+**Competências**
+
+- Definir tamanhos de fonte e espaçamentos de forma escalável e ajustável.
+- Escolher cores ou filtros de contraste para manter legibilidade (por exemplo, não usar cinza muito claro em texto de parágrafo).
+- Explicar como diferentes tamanhos e contrastes impactam usuários com baixa visão.
+- Aplicar estilos tipográficos que se ajustem a ampliação de tela sem sobrecarga do layout.
+
+**Dependências**
+
+CSS-02 (unidades e dimensões).
+
+**Web Integration**
+
+Revisar um design de formulário ou artigo e ajustar tamanhos de fonte/unidades para torná-los responsivos a configurações de zoom do navegador.
+
+### CSS-06.02 — Estados de Interação e Foco
+
+**Objetivo**
+
+Manter interfaces navegáveis por teclado e indicadores visuais claros (hover, foco, ativo).
+
+**Fundamentos**
+
+- Estilos de hover e active (`:hover`, `:active`); realce de itens interativos.
+- Indicador de foco (`:focus` ou `:focus-visible`): manter ou estilizar outline padrão para acessibilidade.
+- Nunca remover completamente os estilos de foco (outline), pois isso prejudica usuários de teclado.
+- Tamanho adequado de áreas clicáveis (paddings mínimos em botões ou links).
+
+**Competências**
+
+- Assegurar que elementos interativos mostram estado visível quando focados via teclado.
+- Diferenciar `:hover` (mouse) de `:focus` (teclado) e usar `:focus-visible` quando apropriado.
+- Criar estilos evidentes (cores ou contornos) que indiquem foco, atendendo aos critérios de usabilidade.
+- Evitar usar apenas cor para transmitir informação (ex.: “estilos importantes” usando cor + outro indicador).
+
+**Dependências**
+
+CSS-01 (pseudoclasses).
+
+**Web Integration**
+
+Desenvolver um menu de navegação acessível que mostra outline nos links ao receber foco por Tab, e destacar o item atual via `:focus`.
+
+### CSS-06.03 — Ocultamento e Ordens de Leitura
+
+**Objetivo**
+
+Ocultar elementos de forma adequada sem prejudicar leitores de tela, e manter ordem lógica de conteúdo.
+
+**Fundamentos**
+
+- `display: none` remove do fluxo e também da árvore de acessibilidade (conteúdo não é lido por leitores de tela).
+- `visibility: hidden` esconde visualmente mas mantém espaço no layout; leitores de tela ainda verão o conteúdo (discutir quando usar cada um).
+- Posicionamentos fora de tela (ex.: `position: absolute; left: -9999px`) para esconder conteúdo de layout mas mantê-lo disponível (ex.: texto alternativo).
+- Leitura de conteúdo na ordem do DOM: mesmo que CSS reordene visualmente, manter estrutura HTML semântica (flex/grid não devem reordenar mentalmente o conteúdo sem necessidade).
+
+**Competências**
+
+- Decidir como esconder conteúdo (por ex., menus móveis) sem quebrar acessibilidade.
+- Garantir que a ordem de foco (tab order) segue o fluxo visual ou está clara.
+- Justificar o uso de `display:none` vs outras técnicas para esconder conteúdo dinâmico.
+
+**Dependências**
+
+CSS-03 (fluxo e posicionamento).
+
+**Web Integration**
+
+Criar um menu “off-canvas” que aparece ao clicar num botão: usar `display:none` e depois `display:block` via CSS/JS, assegurando que o conteúdo escondido não confunda leitores de tela.
+
+## Checklist
+
+- [ ] Escolher tamanhos de fonte e espaçamentos que mantenham a legibilidade (usar unidades proporcionais).
+- [ ] Garantir contraste suficiente entre texto e fundo (evitar combinações ilegíveis).
+- [ ] Manter indicadores de foco visíveis em elementos interativos (não remover o outline padrão).
+- [ ] Ocultar elementos sem quebrar o fluxo de leitura para tecnologias assistivas.
+
+## Validação do bloco
+
+Ao final deste bloco, o aluno deverá avaliar e corrigir um exemplo de interface simple para torná-lo acessível. Por exemplo, ao explicar um layout com botões e links, ele apontará problemas de contraste ou falta de foco visível, mostrando como ajustes no CSS (tamanhos relativos, outline, etc.) resolvem esses problemas sem alterar o HTML estrutural.
+
+---
+
+### Navegação
+
+[← Mapa curricular](./README.md) ·
+[↑ CSS Foundations Lab](../README.md) ·
+[CSS-01 — Seletores, Especificidade e Cascata →](../practice/css-01-seletores-especificidade-e-cascata/)

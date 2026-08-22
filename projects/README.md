@@ -1,13 +1,7 @@
-# Projetos
+# Projects
 
-Esta seção reunirá projetos de integração ampla do **CSS Foundations Lab**. Diferentemente dos checkpoints, que consolidam um bloco específico, os projetos daqui podem combinar conhecimentos desenvolvidos em múltiplos blocos do currículo quando essa integração produzir uma evidência técnica relevante.
+Este diretório reunirá os **projetos do Lab**.
 
-Cada projeto publicado terá pasta e `README.md` próprios, com apresentação do objetivo, contexto, mecanismos de CSS integrados, comportamento responsivo e acessível, estrutura da solução e decisões técnicas pertinentes ao trabalho realizado.
+Cada projeto integrará fundamentos já estudados em um problema de maior escopo, exigindo **planejamento, implementação, organização, debugging e decisões técnicas justificadas**.
 
-## Projetos publicados
-
-Nenhum projeto publicado ainda.
-
----
-
-[← Voltar ao CSS Foundations Lab](../README.md)
+Os projetos serão adicionados progressivamente conforme houver base suficiente para integrar múltiplos blocos de forma significativa.
