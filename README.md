@@ -29,16 +29,26 @@ O foco é compreender os mecanismos que determinam como estilos e layouts funcio
 
 > Consulte o [currículo completo](./curriculum/curriculum.md).
 
+## Diretório visual de exercícios
+
+O **diretório visual** organiza os módulos e tópicos deste Lab em uma página navegável. Conforme os exercícios forem publicados, será possível acessá-los e visualizar as implementações diretamente no navegador.
+
+> **[Explorar os exercícios do CSS Lab →](https://juniohgd.github.io/css-foundations-lab/css-lab/)**
+
+Os arquivos de estudo, exercícios e checkpoints também podem ser consultados na pasta [`practice/`](./practice/).
+
 ## Estrutura do repositório
 
 ```text
 css-foundations-lab/
 ├── curriculum/
+├── css-lab/
 ├── practice/
 └── projects/
 ```
 
 - [`curriculum/`](./curriculum/) — mapa e currículo canônico do Lab.
+- [`css-lab/`](./css-lab/) — página do diretório visual de exercícios.
 - [`practice/`](./practice/) — blocos, unidades, exercícios e checkpoints.
 - [`projects/`](./projects/) — projetos de integração de maior escopo.
 
