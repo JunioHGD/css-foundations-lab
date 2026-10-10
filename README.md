@@ -10,6 +10,16 @@ O foco é compreender os mecanismos que determinam como estilos e layouts funcio
 
 > **Fundamentos → prática → diagnóstico → integração**
 
+**Acesso rápido:** [Exercícios](#diretório-visual-de-exercícios) · [Competências](#competências) · [Percurso](#percurso) · [Estrutura do repositório](#estrutura-do-repositório)
+
+## Diretório visual de exercícios
+
+O **diretório visual** organiza os módulos e tópicos deste Lab em uma página navegável. Conforme os exercícios forem publicados, será possível acessá-los e visualizar as implementações diretamente no navegador.
+
+> **[Explorar os exercícios do CSS Lab →](https://juniohgd.github.io/css-foundations-lab/css-lab/)**
+
+Os arquivos de estudo, exercícios e checkpoints também podem ser consultados na pasta [`practice/`](./practice/).
+
 ## Competências
 
 - **implementar e diagnosticar estilos previsíveis**, compreendendo seleção, cascata, especificidade e herança;
@@ -29,13 +39,9 @@ O foco é compreender os mecanismos que determinam como estilos e layouts funcio
 
 > Consulte o [currículo completo](./curriculum/curriculum.md).
 
-## Diretório visual de exercícios
+### Navegação
 
-O **diretório visual** organiza os módulos e tópicos deste Lab em uma página navegável. Conforme os exercícios forem publicados, será possível acessá-los e visualizar as implementações diretamente no navegador.
-
-> **[Explorar os exercícios do CSS Lab →](https://juniohgd.github.io/css-foundations-lab/css-lab/)**
-
-Os arquivos de estudo, exercícios e checkpoints também podem ser consultados na pasta [`practice/`](./practice/).
+[CSS-01 — Seletores, Especificidade e Cascata →](./practice/css-01-seletores-especificidade-e-cascata/)
 
 ## Estrutura do repositório
 
@@ -52,8 +58,3 @@ css-foundations-lab/
 - [`practice/`](./practice/) — blocos, unidades, exercícios e checkpoints.
 - [`projects/`](./projects/) — projetos de integração de maior escopo.
 
----
-
-### Navegação
-
-[CSS-01 — Seletores, Especificidade e Cascata →](./practice/css-01-seletores-especificidade-e-cascata/)
