@@ -24,11 +24,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Desenvolver um menu de navegação acessível que mostra outline nos links ao receber foco por Tab, e destacar o item atual via `:focus`.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
