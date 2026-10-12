@@ -26,11 +26,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Implementar uma tipografia escalável: por exemplo, configurar `html { font-size: 100%; }` e usar `rem` para títulos, permitindo o ajuste proporcional se o usuário alterar o zoom/zoom da página.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
