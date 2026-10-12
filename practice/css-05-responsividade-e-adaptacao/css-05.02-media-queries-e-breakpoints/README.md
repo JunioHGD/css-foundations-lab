@@ -25,11 +25,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Implementar um design de site onde em telas estreitas (mobile) os itens ficam empilhados verticalmente, e em telas largas formam colunas horizontais. Exemplo: converter um menu de hambúrguer em barras horizontais via media query.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
