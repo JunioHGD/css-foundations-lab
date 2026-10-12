@@ -25,11 +25,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Implementar um layout de “cards” onde cada linha deve conter um número variável de itens que se ajustam ao espaço. Por exemplo, um cabeçalho com itens de navegação distribuidos uniformemente no eixo principal, ou uma galeria responsiva de cartões usando `flex`.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
