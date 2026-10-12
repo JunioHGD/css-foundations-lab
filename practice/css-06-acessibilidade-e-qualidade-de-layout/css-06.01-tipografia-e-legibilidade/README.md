@@ -24,11 +24,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Revisar um design de formulário ou artigo e ajustar tamanhos de fonte/unidades para torná-los responsivos a configurações de zoom do navegador.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
