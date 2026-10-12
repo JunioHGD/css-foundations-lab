@@ -24,11 +24,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Resolver um caso em que um painel de conteúdo está excedendo seu contêiner. Por exemplo, exibir barras de rolagem apenas quando necessário usando `overflow`, ou fazer imagens responsivas com `max-width: 100%`.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
