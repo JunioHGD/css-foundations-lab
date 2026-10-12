@@ -24,11 +24,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Posicionar um elemento de destaque levemente deslocado (por exemplo, um selo “New” sobre um banner) usando `position: relative` no elemento pai e `position: absolute` no selo (a ser visto em posicionamento absoluto). No contexto deste exercício, o foco será entender o deslocamento relativo antes de usar absoluto.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
