@@ -25,11 +25,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Criar a estrutura de página com cabeçalho, menu lateral e conteúdo principal usando Grid. Por exemplo, definir uma grade 2x2 onde o cabeçalho ocupa toda a largura e o menu ocupa a coluna esquerda em múltiplas linhas.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
