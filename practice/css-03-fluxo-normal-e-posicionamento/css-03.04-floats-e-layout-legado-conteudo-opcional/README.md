@@ -22,11 +22,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Flutuar uma imagem à esquerda de um parágrafo, garantindo que o texto se ajuste corretamente (float). Em um contexto de integração, adicionar clareza de funcionamento comparando com Flexbox para colunas como alternativa.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
