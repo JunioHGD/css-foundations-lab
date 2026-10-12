@@ -1,191 +1,341 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Índice de módulos, tópicos e exercícios do CSS Foundations Lab.">
-  <title>CSS Foundations Lab — Diretório de Exercícios</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <div class="page">
-    <header class="topbar">
-      <a class="wordmark" href="#top" aria-label="Voltar ao início">&lt;<em>junio.dev</em> / labs&gt;</a>
-      <a class="toplink" href="https://github.com/JunioHGD/css-foundations-lab" target="_blank" rel="noopener noreferrer">Repositório GitHub ↗</a>
-    </header>
-    <main id="top">
-      <section class="hero" aria-labelledby="page-title">
-        <div class="hero-content">
-          <span class="eyebrow">STYLE GUIDE / 02 &nbsp;·&nbsp; Estilo, layout e responsividade</span>
-          <h1 id="page-title">Do detalhe visual ao sistema de layout<span class="accent">.</span></h1>
-          <p class="lead">Um catálogo de práticas para transformar fundamentos de CSS em interfaces consistentes, responsivas e acessíveis.</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Índice de módulos, tópicos e exercícios do CSS Foundations Lab.">
+    <title>CSS Foundations Lab — Diretório de Exercícios</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <a class="wordmark" href="#top" aria-label="Voltar ao início">&lt;<em>junio.dev</em> / labs&gt;</a>
+        <a class="toplink" href="https://github.com/JunioHGD/css-foundations-lab" target="_blank" rel="noopener noreferrer">Repositório GitHub ↗</a>
+      </header>
+      <main id="top">
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-content">
+            <span class="eyebrow">STYLE GUIDE / 02 &nbsp;·&nbsp; Estilo, layout e responsividade</span>
+            <h1 id="page-title">Do detalhe visual ao sistema de layout<span class="accent">.</span></h1>
+            <p class="lead">Um catálogo de práticas para transformar fundamentos de CSS em interfaces consistentes, responsivas e acessíveis.</p>
+          </div>
+          <div class="hero-graphic" aria-hidden="true">
+            <span class="graphic-chip">{ }</span>
+            <span class="graphic-chip">#grid</span>
+            <span class="graphic-chip">:hover</span>
+          </div>
+        </section>
+        <div class="stats" aria-label="Resumo curricular">
+          <div class="stat">
+            <strong>06</strong>
+            <span>módulos</span>
+          </div>
+          <div class="stat">
+            <strong>16</strong>
+            <span>tópicos</span>
+          </div>
+          <div class="stat">
+            <strong>00</strong>
+            <span>exercícios publicados</span>
+          </div>
         </div>
-        <div class="hero-graphic" aria-hidden="true"><span class="graphic-chip">{ }</span><span class="graphic-chip">#grid</span><span class="graphic-chip">:hover</span></div>
-      </section>
-      <div class="stats" aria-label="Resumo curricular">
-        <div class="stat"><strong>06</strong><span>módulos</span></div>
-        <div class="stat"><strong>16</strong><span>tópicos</span></div>
-        <div class="stat"><strong>00</strong><span>exercícios publicados</span></div>
-      </div>
-      <div class="layout">
-        <aside class="sidebar" aria-label="Índice de módulos">
-          <p class="aside-kicker">Navegação / currículo</p>
-          <nav aria-label="Ir para o módulo"><ol class="module-nav"><li><a href="#css-01"><span>01</span>Seletores, Especificidade e Cascata</a></li>
-<li><a href="#css-02"><span>02</span>Caixa e Dimensionamento</a></li>
-<li><a href="#css-03"><span>03</span>Fluxo Normal e Posicionamento</a></li>
-<li><a href="#css-04"><span>04</span>Layout com Flexbox e Grid</a></li>
-<li><a href="#css-05"><span>05</span>Responsividade e Adaptação</a></li>
-<li><a href="#css-06"><span>06</span>Acessibilidade e Qualidade de Layout</a></li></ol></nav>
-          <div class="sidebar-note"><strong>Como navegar</strong>Escolha um módulo e abra um tópico para encontrar as práticas. Os links serão adicionados conforme os exercícios forem publicados.</div>
-        </aside>
-        <div class="content">
-          <div class="section-heading"><h2>Explorar módulos</h2><p>Índice baseado no currículo do Lab</p></div>
-          <div class="modules"><section class="module" id="css-01" aria-labelledby="heading-css-01">
-      <div class="module-header">
-        <span class="module-id">CSS-01 / MÓDULO 01</span>
-        <h3 id="heading-css-01">Seletores, Especificidade e Cascata</h3>
-        <div class="module-meta"><span class="module-count">02 tópicos</span><a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-01-seletores-especificidade-e-cascata/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a></div>
-      </div>
-      <details class="topic">
-          <summary><span class="topic-id">CSS-01.01</span><span class="topic-title">Seletores CSS</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-01-seletores-especificidade-e-cascata/css-01.01-seletores-css" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-            <!-- EXEMPLO PARA FUTURA PUBLICAÇÃO:
-            <a class="exercise-link" href="../practice/css-01-seletores-especificidade-e-cascata/css-01.01-seletores-css/exercises/exercicio-01/index.html" target="_blank" rel="noopener noreferrer">Abrir exercício 01 ↗</a>
-            -->
+        <div class="layout">
+          <aside class="sidebar" aria-label="Índice de módulos">
+            <p class="aside-kicker">Navegação / currículo</p>
+            <nav aria-label="Ir para o módulo">
+              <ol class="module-nav">
+                <li>
+                  <a href="#css-01"><span>01</span>Seletores, Especificidade e Cascata</a>
+                </li>
+                <li>
+                  <a href="#css-02"><span>02</span>Caixa e Dimensionamento</a>
+                </li>
+                <li>
+                  <a href="#css-03"><span>03</span>Fluxo Normal e Posicionamento</a>
+                </li>
+                <li>
+                  <a href="#css-04"><span>04</span>Layout com Flexbox e Grid</a>
+                </li>
+                <li>
+                  <a href="#css-05"><span>05</span>Responsividade e Adaptação</a>
+                </li>
+                <li>
+                  <a href="#css-06"><span>06</span>Acessibilidade e Qualidade de Layout</a>
+                </li>
+              </ol>
+            </nav>
+            <div class="sidebar-note"><strong>Como navegar</strong>Escolha um módulo e abra um tópico para encontrar as práticas. Os links serão adicionados conforme os exercícios forem publicados.</div>
+          </aside>
+          <div class="content">
+            <div class="section-heading">
+              <h2>Explorar módulos</h2>
+              <p>Índice baseado no currículo do Lab</p>
+            </div>
+            <div class="modules">
+              <section class="module" id="css-01" aria-labelledby="heading-css-01">
+                <div class="module-header">
+                  <span class="module-id">CSS-01 / MÓDULO 01</span>
+                  <h3 id="heading-css-01">Seletores, Especificidade e Cascata</h3>
+                  <div class="module-meta">
+                    <span class="module-count">02 tópicos</span>
+                    <a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-01-seletores-especificidade-e-cascata/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a>
+                  </div>
+                </div>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-01.01</span>
+                    <span class="topic-title">Seletores CSS</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-01-seletores-especificidade-e-cascata/css-01.01-seletores-css" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                    <!-- EXEMPLO PARA FUTURA PUBLICAÇÃO:
+                    <a class="exercise-link" href="../practice/css-01-seletores-especificidade-e-cascata/css-01.01-seletores-css/exercises/exercicio-01/index.html" target="_blank" rel="noopener noreferrer">Abrir exercício 01 ↗</a>
+                    -->
+                  </div>
+                </details>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-01.02</span>
+                    <span class="topic-title">Cascata, Especificidade e Herança</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-01-seletores-especificidade-e-cascata/css-01.02-cascata-especificidade-e-heranca" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+              </section>
+              <section class="module" id="css-02" aria-labelledby="heading-css-02">
+                <div class="module-header">
+                  <span class="module-id">CSS-02 / MÓDULO 02</span>
+                  <h3 id="heading-css-02">Caixa e Dimensionamento</h3>
+                  <div class="module-meta">
+                    <span class="module-count">03 tópicos</span>
+                    <a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-02-caixa-e-dimensionamento/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a>
+                  </div>
+                </div>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-02.01</span>
+                    <span class="topic-title">Modelo de Caixa (Box Model)</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-02-caixa-e-dimensionamento/css-02.01-modelo-de-caixa-box-model" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-02.02</span>
+                    <span class="topic-title">Valores, Unidades e Tipografia</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-02-caixa-e-dimensionamento/css-02.02-valores-unidades-e-tipografia" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-02.03</span>
+                    <span class="topic-title">Dimensões, Largura/Altura e Overflow</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-02-caixa-e-dimensionamento/css-02.03-dimensoes-largura-altura-e-overflow" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+              </section>
+              <section class="module" id="css-03" aria-labelledby="heading-css-03">
+                <div class="module-header">
+                  <span class="module-id">CSS-03 / MÓDULO 03</span>
+                  <h3 id="heading-css-03">Fluxo Normal e Posicionamento</h3>
+                  <div class="module-meta">
+                    <span class="module-count">04 tópicos</span>
+                    <a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-03-fluxo-normal-e-posicionamento/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a>
+                  </div>
+                </div>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-03.01</span>
+                    <span class="topic-title">Fluxo normal (block vs inline) e display</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-03-fluxo-normal-e-posicionamento/css-03.01-fluxo-normal-block-vs-inline-e-display" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-03.02</span>
+                    <span class="topic-title">Posicionamento Estático e Relativo</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-03-fluxo-normal-e-posicionamento/css-03.02-posicionamento-estatico-e-relativo" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-03.03</span>
+                    <span class="topic-title">Posicionamento Absoluto, Fixo, Sticky e Empilhamento</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-03-fluxo-normal-e-posicionamento/css-03.03-posicionamento-absoluto-fixo-sticky-e-empilhamento" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-03.04</span>
+                    <span class="topic-title">Floats e Layout Legado (conteúdo opcional)</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-03-fluxo-normal-e-posicionamento/css-03.04-floats-e-layout-legado-conteudo-opcional" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+              </section>
+              <section class="module" id="css-04" aria-labelledby="heading-css-04">
+                <div class="module-header">
+                  <span class="module-id">CSS-04 / MÓDULO 04</span>
+                  <h3 id="heading-css-04">Layout com Flexbox e Grid</h3>
+                  <div class="module-meta">
+                    <span class="module-count">02 tópicos</span>
+                    <a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-04-layout-com-flexbox-e-grid/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a>
+                  </div>
+                </div>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-04.01</span>
+                    <span class="topic-title">Flexbox (Layout Unidimensional)</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-04-layout-com-flexbox-e-grid/css-04.01-flexbox-layout-unidimensional" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-04.02</span>
+                    <span class="topic-title">CSS Grid (Layout Bidimensional)</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-04-layout-com-flexbox-e-grid/css-04.02-css-grid-layout-bidimensional" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+              </section>
+              <section class="module" id="css-05" aria-labelledby="heading-css-05">
+                <div class="module-header">
+                  <span class="module-id">CSS-05 / MÓDULO 05</span>
+                  <h3 id="heading-css-05">Responsividade e Adaptação</h3>
+                  <div class="module-meta">
+                    <span class="module-count">02 tópicos</span>
+                    <a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-05-responsividade-e-adaptacao/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a>
+                  </div>
+                </div>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-05.01</span>
+                    <span class="topic-title">Layout Fluido e Unidades Relativas</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-05-responsividade-e-adaptacao/css-05.01-layout-fluido-e-unidades-relativas" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-05.02</span>
+                    <span class="topic-title">Media Queries e Breakpoints</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-05-responsividade-e-adaptacao/css-05.02-media-queries-e-breakpoints" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+              </section>
+              <section class="module" id="css-06" aria-labelledby="heading-css-06">
+                <div class="module-header">
+                  <span class="module-id">CSS-06 / MÓDULO 06</span>
+                  <h3 id="heading-css-06">Acessibilidade e Qualidade de Layout</h3>
+                  <div class="module-meta">
+                    <span class="module-count">03 tópicos</span>
+                    <a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-06-acessibilidade-e-qualidade-de-layout/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a>
+                  </div>
+                </div>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-06.01</span>
+                    <span class="topic-title">Tipografia e Legibilidade</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-06-acessibilidade-e-qualidade-de-layout/css-06.01-tipografia-e-legibilidade" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-06.02</span>
+                    <span class="topic-title">Estados de Interação e Foco</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-06-acessibilidade-e-qualidade-de-layout/css-06.02-estados-de-interacao-e-foco" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+                <details class="topic">
+                  <summary>
+                    <span class="topic-id">CSS-06.03</span>
+                    <span class="topic-title">Ocultamento e Ordens de Leitura</span>
+                    <span class="topic-state">Não publicado</span>
+                    <span class="chevron" aria-hidden="true">⌄</span>
+                  </summary>
+                  <div class="topic-panel">
+                    <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
+                    <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-06-acessibilidade-e-qualidade-de-layout/css-06.03-ocultamento-e-ordens-de-leitura" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
+                  </div>
+                </details>
+              </section>
+            </div>
           </div>
-        </details><details class="topic">
-          <summary><span class="topic-id">CSS-01.02</span><span class="topic-title">Cascata, Especificidade e Herança</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-01-seletores-especificidade-e-cascata/css-01.02-cascata-especificidade-e-heranca" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details>
-    </section><section class="module" id="css-02" aria-labelledby="heading-css-02">
-      <div class="module-header">
-        <span class="module-id">CSS-02 / MÓDULO 02</span>
-        <h3 id="heading-css-02">Caixa e Dimensionamento</h3>
-        <div class="module-meta"><span class="module-count">03 tópicos</span><a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-02-caixa-e-dimensionamento/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a></div>
-      </div>
-      <details class="topic">
-          <summary><span class="topic-id">CSS-02.01</span><span class="topic-title">Modelo de Caixa (Box Model)</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-02-caixa-e-dimensionamento/css-02.01-modelo-de-caixa-box-model" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details><details class="topic">
-          <summary><span class="topic-id">CSS-02.02</span><span class="topic-title">Valores, Unidades e Tipografia</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-02-caixa-e-dimensionamento/css-02.02-valores-unidades-e-tipografia" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details><details class="topic">
-          <summary><span class="topic-id">CSS-02.03</span><span class="topic-title">Dimensões, Largura/Altura e Overflow</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-02-caixa-e-dimensionamento/css-02.03-dimensoes-largura-altura-e-overflow" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details>
-    </section><section class="module" id="css-03" aria-labelledby="heading-css-03">
-      <div class="module-header">
-        <span class="module-id">CSS-03 / MÓDULO 03</span>
-        <h3 id="heading-css-03">Fluxo Normal e Posicionamento</h3>
-        <div class="module-meta"><span class="module-count">04 tópicos</span><a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-03-fluxo-normal-e-posicionamento/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a></div>
-      </div>
-      <details class="topic">
-          <summary><span class="topic-id">CSS-03.01</span><span class="topic-title">Fluxo normal (block vs inline) e display</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-03-fluxo-normal-e-posicionamento/css-03.01-fluxo-normal-block-vs-inline-e-display" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details><details class="topic">
-          <summary><span class="topic-id">CSS-03.02</span><span class="topic-title">Posicionamento Estático e Relativo</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-03-fluxo-normal-e-posicionamento/css-03.02-posicionamento-estatico-e-relativo" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details><details class="topic">
-          <summary><span class="topic-id">CSS-03.03</span><span class="topic-title">Posicionamento Absoluto, Fixo, Sticky e Empilhamento</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-03-fluxo-normal-e-posicionamento/css-03.03-posicionamento-absoluto-fixo-sticky-e-empilhamento" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details><details class="topic">
-          <summary><span class="topic-id">CSS-03.04</span><span class="topic-title">Floats e Layout Legado (conteúdo opcional)</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-03-fluxo-normal-e-posicionamento/css-03.04-floats-e-layout-legado-conteudo-opcional" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details>
-    </section><section class="module" id="css-04" aria-labelledby="heading-css-04">
-      <div class="module-header">
-        <span class="module-id">CSS-04 / MÓDULO 04</span>
-        <h3 id="heading-css-04">Layout com Flexbox e Grid</h3>
-        <div class="module-meta"><span class="module-count">02 tópicos</span><a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-04-layout-com-flexbox-e-grid/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a></div>
-      </div>
-      <details class="topic">
-          <summary><span class="topic-id">CSS-04.01</span><span class="topic-title">Flexbox (Layout Unidimensional)</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-04-layout-com-flexbox-e-grid/css-04.01-flexbox-layout-unidimensional" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details><details class="topic">
-          <summary><span class="topic-id">CSS-04.02</span><span class="topic-title">CSS Grid (Layout Bidimensional)</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-04-layout-com-flexbox-e-grid/css-04.02-css-grid-layout-bidimensional" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details>
-    </section><section class="module" id="css-05" aria-labelledby="heading-css-05">
-      <div class="module-header">
-        <span class="module-id">CSS-05 / MÓDULO 05</span>
-        <h3 id="heading-css-05">Responsividade e Adaptação</h3>
-        <div class="module-meta"><span class="module-count">02 tópicos</span><a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-05-responsividade-e-adaptacao/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a></div>
-      </div>
-      <details class="topic">
-          <summary><span class="topic-id">CSS-05.01</span><span class="topic-title">Layout Fluido e Unidades Relativas</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-05-responsividade-e-adaptacao/css-05.01-layout-fluido-e-unidades-relativas" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details><details class="topic">
-          <summary><span class="topic-id">CSS-05.02</span><span class="topic-title">Media Queries e Breakpoints</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-05-responsividade-e-adaptacao/css-05.02-media-queries-e-breakpoints" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details>
-    </section><section class="module" id="css-06" aria-labelledby="heading-css-06">
-      <div class="module-header">
-        <span class="module-id">CSS-06 / MÓDULO 06</span>
-        <h3 id="heading-css-06">Acessibilidade e Qualidade de Layout</h3>
-        <div class="module-meta"><span class="module-count">03 tópicos</span><a class="check-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-06-acessibilidade-e-qualidade-de-layout/checkpoint" target="_blank" rel="noopener noreferrer">Checkpoint no GitHub ↗</a></div>
-      </div>
-      <details class="topic">
-          <summary><span class="topic-id">CSS-06.01</span><span class="topic-title">Tipografia e Legibilidade</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-06-acessibilidade-e-qualidade-de-layout/css-06.01-tipografia-e-legibilidade" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details><details class="topic">
-          <summary><span class="topic-id">CSS-06.02</span><span class="topic-title">Estados de Interação e Foco</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-06-acessibilidade-e-qualidade-de-layout/css-06.02-estados-de-interacao-e-foco" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details><details class="topic">
-          <summary><span class="topic-id">CSS-06.03</span><span class="topic-title">Ocultamento e Ordens de Leitura</span><span class="topic-state">Não publicado</span><span class="chevron" aria-hidden="true">⌄</span></summary>
-          <div class="topic-panel">
-            <p class="empty-state">Nenhum exercício publicado para este tópico.</p>
-            <a class="doc-link" href="https://github.com/JunioHGD/css-foundations-lab/tree/main/practice/css-06-acessibilidade-e-qualidade-de-layout/css-06.03-ocultamento-e-ordens-de-leitura" target="_blank" rel="noopener noreferrer">Consultar conteúdo no GitHub ↗</a>
-          </div>
-        </details>
-    </section></div>
         </div>
-      </div>
-    </main>
-    <footer class="footer"><span class="footer-label">CSS Foundations Lab</span><span>Diretório experimental · HTML + CSS · Sem JavaScript</span></footer>
-  </div>
-</body>
+      </main>
+      <footer class="footer">
+        <span class="footer-label">CSS Foundations Lab</span>
+        <span>Diretório experimental · HTML + CSS · Sem JavaScript</span>
+      </footer>
+    </div>
+  </body>
 </html>
