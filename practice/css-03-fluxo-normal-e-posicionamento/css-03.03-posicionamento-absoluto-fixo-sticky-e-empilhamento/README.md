@@ -25,11 +25,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Construir um menu fixo no topo da página (`fixed`) ou uma caixa de diálogo posicionada (`absolute`) sobre o conteúdo; por exemplo, um modal ou tooltip que requer posicionamento fora do fluxo normal.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
