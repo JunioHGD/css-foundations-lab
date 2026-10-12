@@ -25,11 +25,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Criar um “cartão” visual (card) onde se ajusta padding e margem para alinhar texto e imagem interna. Por exemplo, definir `box-sizing:border-box` para que o `width` defina o tamanho total do card, evitando overflow.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
