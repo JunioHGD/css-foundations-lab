@@ -23,11 +23,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Criar um menu “off-canvas” que aparece ao clicar num botão: usar `display:none` e depois `display:block` via CSS/JS, assegurando que o conteúdo escondido não confunda leitores de tela.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
