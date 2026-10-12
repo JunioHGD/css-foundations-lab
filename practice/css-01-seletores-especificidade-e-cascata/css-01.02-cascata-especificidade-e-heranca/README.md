@@ -24,11 +24,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Resolver um problema de cascata em que diferentes arquivos CSS (ou estilos inline) definem a mesma propriedade. Ex.: um script JS alterna classes e o aluno explica por que o estilo resultante veio de uma regra específica (especificidade e ordem).
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
