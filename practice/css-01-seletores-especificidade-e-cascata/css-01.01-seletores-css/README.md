@@ -23,11 +23,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Estilizar um menu de navegação que muda aparência no `:hover` ou no estado de foco via teclado. Por exemplo, JS pode adicionar/remover classes a elementos de menu; o aluno deve aplicar seletores adequados para refletir essas mudanças.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
