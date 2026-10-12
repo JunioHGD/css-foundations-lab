@@ -10,21 +10,31 @@ O foco é compreender os mecanismos que determinam como estilos e layouts funcio
 
 > **Fundamentos → prática → diagnóstico → integração**
 
-**Acesso rápido:** [Exercícios](#diretório-visual-de-exercícios) · [Competências](#competências) · [Percurso](#percurso) · [Estrutura do repositório](#estrutura-do-repositório)
+**Acesso rápido:** [Por onde começar](#por-onde-começar) · [Exercícios](#diretório-visual-de-exercícios) · [Competências](#competências) · [Percurso](#percurso) · [Estrutura do repositório](#estrutura-do-repositório)
+
+## Por onde começar
+
+| Objetivo | Caminho |
+| --- | --- |
+| Ver as implementações no navegador | <a href="https://juniohgd.github.io/css-foundations-lab/css-lab/" target="_blank" rel="noopener noreferrer">Explorar os exercícios do CSS Lab →</a> |
+| Consultar o código e os materiais de estudo | [`practice/`](./practice/) |
+| Entender a sequência e o escopo do estudo | [Currículo completo](./curriculum/curriculum.md) |
 
 ## Diretório visual de exercícios
 
 O **diretório visual** organiza os módulos e tópicos deste Lab em uma página navegável. Conforme os exercícios forem publicados, será possível acessá-los e visualizar as implementações diretamente no navegador.
 
-> **[Explorar os exercícios do CSS Lab →](https://juniohgd.github.io/css-foundations-lab/css-lab/)**
+> <a href="https://juniohgd.github.io/css-foundations-lab/css-lab/" target="_blank" rel="noopener noreferrer"><strong>Explorar os exercícios do CSS Lab →</strong></a>
 
 Os arquivos de estudo, exercícios e checkpoints também podem ser consultados na pasta [`practice/`](./practice/).
 
 ## Competências
 
-- **implementar e diagnosticar estilos previsíveis**, compreendendo seleção, cascata, especificidade e herança;
-- **construir e corrigir layouts**, escolhendo adequadamente entre fluxo normal, posicionamento, Flexbox e Grid;
-- **desenvolver interfaces responsivas e acessíveis**, adaptando layouts a diferentes espaços e justificando decisões de implementação.
+Estas competências orientam o estudo e a prática ao longo do Lab:
+
+- **Implementar e diagnosticar estilos previsíveis**, compreendendo seleção, cascata, especificidade e herança.
+- **Construir e corrigir layouts**, escolhendo adequadamente entre fluxo normal, posicionamento, Flexbox e Grid.
+- **Desenvolver interfaces responsivas e acessíveis**, adaptando layouts a diferentes espaços e justificando decisões de implementação.
 
 ## Percurso
 
@@ -41,20 +51,17 @@ Os arquivos de estudo, exercícios e checkpoints também podem ser consultados n
 
 ### Navegação
 
+Para seguir o percurso desde o início, comece pelo primeiro bloco:
+
 [CSS-01 — Seletores, Especificidade e Cascata →](./practice/css-01-seletores-especificidade-e-cascata/)
 
 ## Estrutura do repositório
 
-```text
-css-foundations-lab/
-├── curriculum/
-├── css-lab/
-├── practice/
-└── projects/
-```
+Organização de `css-foundations-lab/`:
 
-- [`curriculum/`](./curriculum/) — mapa e currículo canônico do Lab.
-- [`css-lab/`](./css-lab/) — página do diretório visual de exercícios.
-- [`practice/`](./practice/) — blocos, unidades, exercícios e checkpoints.
-- [`projects/`](./projects/) — projetos de integração de maior escopo.
-
+| Diretório | Finalidade |
+| --- | --- |
+| [`curriculum/`](./curriculum/) | Mapa e currículo canônico do Lab. |
+| [`css-lab/`](./css-lab/) | Página do diretório visual de exercícios. |
+| [`practice/`](./practice/) | Blocos, unidades, exercícios e checkpoints. |
+| [`projects/`](./projects/) | Projetos de integração de maior escopo. |
