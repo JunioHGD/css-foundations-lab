@@ -25,11 +25,6 @@ Os exercícios desta unidade aplicam os fundamentos estudados por meio de implem
 
 [Ver exercícios →](./exercises/)
 
-## Web Integration
-
-Ajustar o layout de um cabeçalho com itens de menu: tornar elementos `li` em linha (`display:inline-block`) ou em bloco horizontal, garantindo que se comportem como desejado no fluxo.
-
-[Ver Web Integration →](../../../web-integration/)
 
 ---
 
