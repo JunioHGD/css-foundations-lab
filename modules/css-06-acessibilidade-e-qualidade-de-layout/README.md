@@ -10,7 +10,7 @@ Garantir que estilos preservem legibilidade, foco, sequência de leitura e uso c
 
 ## Competências
 
-- Encontrar e corrigir problemas de contraste, foco e legibilidade.
+- Encontrar e corrigir problemas de contraste, foco, legibilidade e feedback visual de formulários.
 - Preservar ordem de leitura e navegação coerentes.
 - Escolher estratégias de ocultação e movimento sem prejudicar a acessibilidade.
 

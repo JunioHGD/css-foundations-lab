@@ -12,7 +12,7 @@ Controlar dimensões, espaçamentos e aparência sem provocar cortes ou transbor
 
 - Calcular e ajustar corretamente tamanho e espaçamento dos elementos.
 - Estilizar tipografia, fundos e bordas de forma consistente.
-- Corrigir overflow sem ocultar conteúdo importante.
+- Corrigir overflow, inclusive com palavras longas, sem ocultar conteúdo importante.
 
 ## Exercício integrador
 

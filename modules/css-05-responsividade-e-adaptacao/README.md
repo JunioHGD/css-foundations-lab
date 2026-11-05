@@ -11,7 +11,7 @@ Fazer interfaces funcionarem em larguras e preferências de visualização difer
 
 - Construir layouts utilizáveis no celular e desktop.
 - Escolher breakpoints segundo o conteúdo e não apenas por convenção.
-- Inspecionar e corrigir problemas de adaptação entre diferentes larguras.
+- Inspecionar e corrigir problemas de adaptação entre diferentes larguras, zoom e tamanhos de fonte.
 
 ## Exercício integrador
 

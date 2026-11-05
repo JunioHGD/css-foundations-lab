@@ -10,6 +10,8 @@ Dominar os fundamentos de CSS necessários para construir, compreender e manter 
 
 **Concluído significa:** conseguir explicar o mecanismo, utilizá-lo com autonomia e corrigir erros comuns. Não é necessário explorar todos os recursos avançados da linguagem para avançar.
 
+**Limite do Lab:** CSS trabalha apresentação, layout, estados visuais e adaptação. Os exercícios usam HTML como base, sem exigir lógica JavaScript não estudada; interações por JavaScript são complementares. Acessibilidade visual e responsividade devem ser consideradas progressivamente, não apenas nos módulos finais.
+
 ## Percurso
 
 | Módulo | Conteúdos | Tópicos | Exercício integrador |
@@ -37,9 +39,9 @@ Dominar os fundamentos de CSS necessários para construir, compreender e manter 
 
 ### CSS-01.02 — Cascata, especificidade e herança
 
-- Prioridade entre declarações: origem, importância (`!important`), especificidade e ordem de aparição; visão geral de camadas de cascata.
+- Prioridade entre declarações: origem, importância (`!important`), camadas de cascata, especificidade e ordem de aparição, conforme aplicável. Usar `!important` com critério, não como correção automática.
 - Propriedades herdadas e não herdadas; valores `inherit`, `initial` e `unset`; estilos padrão do navegador.
-- Depuração no DevTools (Styles/Computed), organização de seletores e valores personalizados (`--variavel`, `var()`).
+- Depuração no DevTools (painéis Styles/Computed), organização de seletores e valores personalizados (`--variavel`, `var()`) para reduzir repetição de cores e espaços.
 
 ### Competências esperadas
 
@@ -69,20 +71,20 @@ Dominar os fundamentos de CSS necessários para construir, compreender e manter 
 
 ### CSS-02.01 — Modelo de caixa
 
-- Conteúdo, `padding`, `border` e `margin`; diferenças entre `content-box` e `border-box`.
+- Conteúdo, `padding`, `border` e `margin`; diferenças entre `content-box` e `border-box`, incluindo uso global criterioso de `box-sizing: border-box`.
 - Cálculo do espaço ocupado e colapso de margens verticais, em situações aplicáveis.
 
 ### CSS-02.02 — Valores, unidades e aparência
 
 - Unidades `px`, `%`, `em`, `rem`, `vw`, `vh` e noções de `calc()`; referência utilizada por cada unidade.
-- Cor, fundo, transparência, bordas, arredondamento, famílias de fontes, peso, tamanho e altura de linha.
+- Cor, fundo, transparência, bordas, arredondamento, famílias de fontes, peso, tamanho e altura de linha; distinguir cor de texto de cor de fundo e manter contraste adequado.
 - Escolha de unidades adequadas ao conteúdo, respeitando zoom e preferências de tamanho do usuário.
 
 ### CSS-02.03 — Dimensionamento e overflow
 
 - `width`, `height`, `min-*`, `max-*`, `auto` e dimensionamento intrínseco.
 - `overflow`, imagens que se ajustam ao contêiner, `aspect-ratio` e `object-fit` nos casos apropriados.
-- Diagnóstico de transbordamento horizontal, conteúdo maior que a caixa e dimensões excessivamente rígidas.
+- Diagnóstico de transbordamento horizontal, palavras/URLs longas e dimensões excessivamente rígidas; aplicar `overflow-wrap` e limites de largura sem esconder conteúdo importante.
 
 ### Competências esperadas
 
@@ -159,13 +161,13 @@ Dominar os fundamentos de CSS necessários para construir, compreender e manter 
 ### CSS-04.01 — Flexbox
 
 - Contêiner e itens flex; eixo principal e transversal; `justify-content`, `align-items` e `gap`.
-- `flex-direction`, `flex-wrap`, `flex-grow`, `flex-shrink`, `flex-basis` e restrições de largura.
+- `flex-direction`, `flex-wrap`, `flex-grow`, `flex-shrink`, `flex-basis` e tamanhos mínimos automáticos dos itens; corrigir overflow quando necessário com `min-width: 0`.
 - Padrões comuns: navegação, cartões em linha, alinhamento de botões e componentes.
 
 ### CSS-04.02 — CSS Grid
 
 - Definição de linhas e colunas com `grid-template-*`, unidades `fr` e `gap`.
-- Posicionamento e dimensionamento com `repeat()`, `minmax()`, `auto-fit` e `auto-fill`.
+- Posicionamento e dimensionamento com `repeat()`, `minmax()`, `auto-fit` e `auto-fill`; entender como conteúdos grandes influenciam o mínimo das trilhas.
 - Diferenças práticas entre Grid e Flexbox; composição de regiões e grades de cartões.
 
 ### Competências esperadas
@@ -196,7 +198,7 @@ Dominar os fundamentos de CSS necessários para construir, compreender e manter 
 
 ### CSS-05.01 — Layouts fluidos
 
-- Abordagem mobile-first, contêineres fluidos e limites com `min-width`/`max-width`.
+- Abordagem mobile-first, contêineres fluidos e limites com `min-width`/`max-width`; verificar a presença do metadado HTML `viewport` para páginas móveis.
 - Unidades relativas aplicadas ao layout; `min()`, `max()` e `clamp()` em situações úteis.
 - Imagens, grades e textos que se adaptam sem depender de dimensões fixas.
 
@@ -204,7 +206,7 @@ Dominar os fundamentos de CSS necessários para construir, compreender e manter 
 
 - Sintaxe de `@media`, consultas de largura e preferência do usuário quando relevantes.
 - Definição de pontos de quebra pelo comportamento do conteúdo, não por modelos fixos de aparelhos.
-- Teste de tamanhos intermediários com ferramentas do navegador e verificação de scroll horizontal.
+- Teste em larguras pequenas, intermediárias e grandes usando DevTools, inclusive zoom e aumento de fonte; verificar scroll horizontal e controles fora da tela.
 
 ### Competências esperadas
 
@@ -240,15 +242,15 @@ Dominar os fundamentos de CSS necessários para construir, compreender e manter 
 
 ### CSS-06.02 — Estados interativos e foco
 
-- Estilos visíveis de `:focus-visible`, `:hover`, `:active`, `:disabled` e estados de formulário.
+- Estilos visíveis de `:focus-visible`, `:hover`, `:active`, `:disabled` e estados de formulários; não comunicar erro/sucesso exclusivamente pela cor.
 - Distinção entre interação por mouse, teclado e toque; não remover foco sem alternativa.
-- Noções de transições e respeito a `prefers-reduced-motion` quando houver movimento.
+- Transições curtas quando acrescentarem feedback e respeito a `prefers-reduced-motion` quando houver movimento; animações complexas não são pré-requisito.
 
 ### CSS-06.03 — Visibilidade e ordem de leitura
 
 - Diferenças entre `display: none`, `visibility: hidden` e transparência em relação a layout, interação e acessibilidade.
 - Ordem visual com Flexbox/Grid versus ordem do DOM e navegação por teclado.
-- Limites da responsabilidade do CSS: semântica HTML e comportamento JavaScript continuam necessários.
+- Limites da responsabilidade do CSS: não inserir conteúdo semântico indispensável apenas por pseudoelementos; HTML fornece significado e JavaScript fornece comportamento.
 
 ### Competências esperadas
 
@@ -269,6 +271,14 @@ Dominar os fundamentos de CSS necessários para construir, compreender e manter 
 [Abrir módulo no repositório](../modules/css-06-acessibilidade-e-qualidade-de-layout/)
 
 ---
+
+## Verificação prática ao concluir o Lab
+
+- Testar interface em celular e desktop, larguras intermediárias, zoom e teclado; confirmar que informação importante não foi cortada.
+- Inspecionar cascata, dimensões, alinhamentos e overflow pelo DevTools antes de adicionar regras corretivas.
+- Validar estados de foco, legibilidade e contraste. Ajustes responsivos e acessíveis fazem parte da qualidade da solução, não são recursos extras.
+
+**Próximas tecnologias:** JavaScript acrescentará comportamento e estado ao HTML e ao CSS; não é necessário aprendê-lo para demonstrar as competências básicas deste Lab.
 
 ## Referências para consulta
 

@@ -32,3 +32,7 @@ Cada módulo reúne tópicos conectados e **um exercício integrador**. Experime
 | [`css-lab/`](./css-lab/) | Vitrine de exercícios. |
 
 [Explorar currículo](./curriculum/curriculum.md) · [Abrir vitrine](https://juniohgd.github.io/css-foundations-lab/css-lab/)
+
+## Continuidade do estudo
+
+O [HTML Foundations Lab](https://github.com/JunioHGD/html-foundations-lab) fornece a base estrutural. Ao consolidar estilos, layouts e responsividade, avance para o [JavaScript Foundations Lab](https://github.com/JunioHGD/javascript--foundations-lab).

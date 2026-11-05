@@ -11,7 +11,7 @@ Compreender como as regras de CSS atingem elementos e como o navegador determina
 
 - Explicar por que uma declaração foi aplicada ou substituída.
 - Escrever seletores previsíveis, evitando especificidade desnecessária.
-- Identificar conflitos e corrigi-los pelo DevTools, sem depender de `!important`.
+- Identificar conflitos e corrigi-los pelo DevTools, sem depender de `!important`, usando variáveis CSS para evitar repetição.
 
 ## Exercício integrador
 

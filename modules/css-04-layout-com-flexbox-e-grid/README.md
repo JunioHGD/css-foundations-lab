@@ -10,7 +10,7 @@ Construir layouts modernos escolhendo corretamente entre distribuição unidimen
 ## Competências
 
 - Escolher Flexbox ou Grid em função das dimensões do layout.
-- Controlar alinhamento, distribuição e preenchimento disponível.
+- Controlar alinhamento, distribuição e preenchimento disponível, incluindo limites de largura dos itens.
 - Criar uma estrutura de página legível sem truques de posicionamento absoluto.
 
 ## Exercício integrador
